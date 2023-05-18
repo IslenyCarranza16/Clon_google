@@ -1,0 +1,426 @@
+*{
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: #fff;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+a:visited {
+    color: #681da8
+}
+
+
+.encabezado{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.subcabeza{
+    padding: 0px 4px 0px 32px;
+    display: flex;
+    float: right;
+    padding-left: 32px;
+    
+}
+
+.gmail_imagenes{
+    display: flex;
+    font-family: arial,sans-serif;
+    line-height: normal;
+    padding-right: 15px;
+}
+
+.gmail{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.gmailLink{
+    color: rgba(0,0,0,.87);
+    text-decoration: none;
+}
+
+.imagenes{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.imagenLink{
+    color: rgba(0,0,0,.87);
+    text-decoration: none;
+}
+
+.gmailLink .imagenLink{
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.imagenLink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.gmailLink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.apps_cuenta{
+    float: right;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    line-height: normal;
+    align-items: center;
+    padding: 4px;
+    margin: auto;
+}
+
+.apps{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 4px;
+    padding: 4px;
+
+}
+
+.appsLink{
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    outline: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+/* Falta poner efecto al ponerse mouse*/
+.appsLink:hover{ 
+    
+    background-color: rgb(237, 236, 236);
+}
+
+
+#imagenapp{
+    color: #5f6368;
+    fill: currentColor;
+    
+}
+
+.cuenta{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px;
+}
+
+.cuentaLink{
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 4px;
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+}
+.cuentaLink:hover{ 
+    
+    background-color: rgb(237, 236, 236);
+}
+
+#imagencuenta{
+    border-radius: 50%;
+    display: block;
+    margin: 0px;
+    position: relative;
+    height: 32px;
+    width: 32px;
+    z-index: 0;
+    background-size: 32px 32px;
+    border: 0;
+}
+
+.appsLink .cuentaLink{
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: top;}
+
+
+      /*cuerpo*/
+
+
+.cuerpo{display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+ align-items: center;}
+
+.logoGoogle{
+    display: block;
+    max-height: 92px;
+    position: relative;
+    height: 100%;
+    margin-top: 200px;
+    
+    }
+
+    .imagenGoogle{    max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: center bottom;
+        width: auto;
+        height: auto;}
+
+
+
+.barraBusqueda{
+    padding: 20px;
+    box-sizing: border-box;
+    max-height: 160px;
+    
+    display: flex;
+    flex-direction: row;
+  
+  
+
+
+}
+
+.croquisbarra{
+    display: flex;
+    min-height: 44px;
+    background: white;
+    border: 1px solid gray;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 800 px;
+    min-width: 582px;
+    height: auto;
+}
+.croquisbarra:hover{
+
+    box-shadow: 2px 2px 2px gray
+}
+
+.barraInterna{
+    display: flex;
+    flex: 1;
+    padding: 5px 8px 0 14px;
+   
+
+}
+
+.iconobusqueda{
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+    height: auto;
+    min-width: 45px;
+}
+
+.espacioBusqueda{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    margin-top: 6px;
+
+}
+
+.areatexto{resize: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    font-size: 16px;
+    flex: 100%;
+}
+
+textarea .areatexto{
+    font-family: arial,sans-serif;
+    line-height: 22px;
+    margin-bottom: 8px;
+    overflow-x: hidden;
+}
+
+.otrosIconos{
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    align-items: stretch;
+    flex-direction: row;
+    height: 44px;
+}
+.microfono{
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding-right: 55px;
+    padding: 0 8px;
+    width: 34px;
+    line-height: 44px;
+}
+
+.Iconomicrofono{height: 24px;
+    width: 24px;
+    vertical-align: middle;}
+
+.camara{
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    padding-right: 25px;
+    width: 24px;
+    line-height: 44px;
+}
+
+.Iconocamara{
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    align-items: center;
+
+}
+
+
+.Botones{
+    height: 70px;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+    justify-content: center;
+}
+.BuscarGoogle{    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;}
+
+    .BuscarGoogle:hover{
+
+        box-shadow: 2px 2px 2px gray
+    }
+
+.Buscartenersuerte{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.Buscartenersuerte:hover{
+
+    box-shadow: 2px 2px 2px gray
+}
+
+.vacio{
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+
+.colombiai{    
+    background: #f2f2f2;
+    flex-shrink: 0;
+    box-sizing: border-box;}
+
+.colombia{
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+    margin-top: 100px;
+}
+
+.piedepagina{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    background: #f2f2f2;
+    width: 100%;
+}
+.footer1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.footer2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+}
+
+.opcionesf1{
+    color: #70757a;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.opcionesf1:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* responsivo*/
